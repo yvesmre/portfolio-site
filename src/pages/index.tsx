@@ -67,7 +67,7 @@ function App() {
       <div id="profile" />
       <Main>
         <main className='bg-stone-700 flex flex-row w-auto h-[36rem] mx-32 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
-          <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" className='absolute left-4 w-2/5 mt-5 drop-shadow-2xl' />
+          <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" width={500} className='absolute left-4 mt-5 drop-shadow-2xl' />
           <p className='absolute left-1/2 pt-16 text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
