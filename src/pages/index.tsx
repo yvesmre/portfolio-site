@@ -5,10 +5,10 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import ProjectPreview from '../components/project-preview.tsx';
 import { StaticImage } from 'gatsby-plugin-image';
 import "../styles/global.css"
-import "../components/SideBar.tsx"
+import "../components/sidebar.tsx"
 import Main from "../components/main.tsx";
-import SideBar from "../components/SideBar.tsx";
-import SideBarIcon from "../components/SideBarIcon.tsx";
+import SideBar from "../components/sidebar.tsx";
+import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { MdContactPhone } from "react-icons/md";
 

@@ -1,3 +1,4 @@
+import { ViewButton } from './view-button';
 import React from 'react'
 import { Link } from 'gatsby';
 import Image from 'gatsby-image'
@@ -10,12 +11,9 @@ const ProjectPreview = ({ title, slug, imageData, splash }: any) => (
             <Link to={`/${slug}/`}>{title}</Link>
         </h2>
         <p className='text-stone-200 py-2 text-md'> {splash} </p>
-        <div className='bg-blue-500 w-40 rounded-full transition ease-in-out delay-50 hover:scale-105 hover:bg-opacity-100 '>
-            <p className='py-2 pl-4 text-lg underline hover:text-emerald-400 text-stone-300 drop-shadow-[0_50px_50px_rgba(0,0,0,255)] '>
-                <Link to={`/${slug}/`}>View project</Link>
-            </p>
-        </div>
+        <ViewButton slug={slug} text={"View Project"} />
     </div >
 );
+
 
 export default ProjectPreview
