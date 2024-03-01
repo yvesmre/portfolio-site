@@ -4,7 +4,7 @@ import "../styles/global.css"
 
 function Main({ children }: any) {
     return <React.Fragment>
-        <div className='bg-gradient-to-b from-green-950 to-blue-950 pb-32 p-1 w-[100%] h-[100%]'>
+        <div className='bg-gradient-to-b from-emerald-950 to-blue-950 pb-32 p-1 w-[100%] h-[100%]'>
             <div>
                 {children}
             </div>

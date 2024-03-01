@@ -10,6 +10,7 @@ import Main from "../components/main.tsx";
 import SideBar from "../components/SideBar.tsx";
 import SideBarIcon from "../components/SideBarIcon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
+import { MdContactPhone } from "react-icons/md";
 
 function App() {
   const data = useStaticQuery(graphql`
@@ -50,16 +51,19 @@ function App() {
         </Link>
       </div>
 
-      <div className="fixed bottom-[5%] w-20 bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
+      <div className="fixed bottom-[5%] w-16 bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
         <button onClick={() => handleClickScroll('profile')}>
           <SideBarIcon> <IoPersonOutline size={20} /></SideBarIcon>
         </button>
         <button onClick={() => handleClickScroll('projects')}>
           <SideBarIcon><IoReader size={20} /></SideBarIcon>
         </button>
+        <button onClick={() => handleClickScroll('contact')}>
+          <SideBarIcon><MdContactPhone size={20} /></SideBarIcon>
+        </button>
       </div>
     </SideBar>
-    <div className="absolute left-24">
+    <div className="absolute left-20">
       <div id="profile" />
       <Main>
         <main className='bg-stone-700 flex flex-row w-auto h-[36rem] mx-32 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
@@ -74,7 +78,7 @@ function App() {
 
         <div id='projects' />
         <GridLayout >
-          <p className='px-4 h-auto py-16 m-[17.975%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
+          <p className='px-4 h-auto py-16 m-[17.5%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
             Projects:
           </p>
           {projects.map(({ node: project }: any) => {
@@ -86,6 +90,14 @@ function App() {
             return (<ProjectPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
           })}
         </GridLayout>
+
+        <div id="contact" className="text-white bg-stone-700 flex flex-row h-[20rem] mx-40 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl">
+
+          <p className="p-16 text-2xl font-bold">
+            Contact me:
+          </p>
+        </div>
+
       </Main>
     </div>
   </div >
