@@ -63,11 +63,10 @@ function App() {
         </button>
       </div>
     </SideBar>
-    <div className="absolute left-20">
+    <div className="absolute left-20" id='landing'> {/* TODO: Terrible way of doing this ,change later*/}
       <Main>
 
-        <div id='landing' className="m-24 w-auto h-[32rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
-
+        <div className="m-24 w-auto h-[32rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
           <p className=" text-3xl font-bold">Hi, welcome to my website.</p>
           <p className=" text-2xl">Click the buttons in the sidebar to find out more about me!</p>
         </div>
