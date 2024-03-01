@@ -5,8 +5,11 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import ProjectPreview from '../components/project-preview.tsx';
 import { StaticImage } from 'gatsby-plugin-image';
 import "../styles/global.css"
-
+import "../components/SideBar.tsx"
 import Main from "../components/main.tsx";
+import SideBar from "../components/SideBar.tsx";
+import SideBarIcon from "../components/SideBarIcon.tsx";
+import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 
 function App() {
   const data = useStaticQuery(graphql`
@@ -31,35 +34,61 @@ function App() {
 
   const projects = data.allProjectsJson.edges;
 
-  return <html>
-    <header> <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
-    </style>
-    </header>
+  function handleClickScroll(target: string) {
+    const element = document.getElementById(target);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-    <Main>
+  return <div className="flex">
+    <SideBar>
+      <div className="fixed top-[2.5%]">
+        <Link to='/'>
+          <SideBarIcon><IoHomeOutline size={25} /></SideBarIcon>
+        </Link>
+      </div>
 
-      <main className='bg-gray-700 flex flex-row w-auto h-96 mx-72 relative bg-opacity-80 shadow-2xl rounded-xl my-4'>
-        <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" className='absolute left-4 w-2/5 mt-5 drop-shadow-2xl' />
-        <p className='absolute left-1/2 py-4 text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </main>
+      <div className="fixed bottom-[5%] w-20 bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
+        <button onClick={() => handleClickScroll('profile')}>
+          <SideBarIcon> <IoPersonOutline size={20} /></SideBarIcon>
+        </button>
+        <button onClick={() => handleClickScroll('projects')}>
+          <SideBarIcon><IoReader size={20} /></SideBarIcon>
+        </button>
+      </div>
+    </SideBar>
+    <div className="absolute left-24">
+      <div id="profile" />
+      <Main>
+        <main className='bg-stone-700 flex flex-row w-auto h-[36rem] mx-32 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
+          <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" className='absolute left-4 w-2/5 mt-5 drop-shadow-2xl' />
+          <p className='absolute left-1/2 pt-16 text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
 
-      <GridLayout>
-        <p className='px-4 h-auto py-16 m-[17.975%] bg-gray-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
-          Projects:
-        </p>
-        {projects.map(({ node: project }: any) => {
-          const title = project.title
-          const slug = project.slug
-          const splash = project.splash
-          const imageData = project.image.childImageSharp.fluid;
+          <div className="absolute left-1/2 bottom-[12.5%] text-center text-white bg-blue-500 pl-2 pr-4 rounded-full transition ease-in-out delay-50 hover:scale-105 hover:bg-opacity-100 ">
+          </div>
+        </main>
 
-          return (<ProjectPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
-        })}
-      </GridLayout>
-    </Main>
 
-  </html>
+        <div id='projects' />
+        <GridLayout >
+          <p className='px-4 h-auto py-16 m-[17.975%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
+            Projects:
+          </p>
+          {projects.map(({ node: project }: any) => {
+            const title = project.title
+            const slug = project.slug
+            const splash = project.splash
+            const imageData = project.image.childImageSharp.fluid;
+
+            return (<ProjectPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
+          })}
+        </GridLayout>
+      </Main>
+    </div>
+  </div >
 }
 
 export default App
