@@ -46,9 +46,9 @@ function App() {
   return <div className="flex">
     <SideBar>
       <div className="fixed top-[2.5%]">
-        <Link to='/'>
+        <button onClick={() => handleClickScroll('landing')}>
           <SideBarIcon><IoHomeOutline size={25} /></SideBarIcon>
-        </Link>
+        </button>
       </div>
 
       <div className="fixed bottom-[5%] w-16 bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
@@ -64,9 +64,19 @@ function App() {
       </div>
     </SideBar>
     <div className="absolute left-20">
-      <div id="profile" />
       <Main>
-        <main className='bg-stone-700 flex flex-row w-auto h-[36rem] mx-32 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
+
+        <div id='landing' className="m-24 w-auto h-[32rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
+
+          <p className=" text-3xl font-bold">Hi, welcome to my website.</p>
+          <p className=" text-2xl">Click the buttons in the sidebar to find out more about me!</p>
+        </div>
+
+
+
+
+        <div id="profile" />
+        <main className='bg-stone-700 flex flex-row w-auto h-[38rem] mx-32 mt-12 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
           <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" width={500} className='absolute left-4 mt-5 drop-shadow-2xl' />
           <p className='absolute left-1/2 pt-16 text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
