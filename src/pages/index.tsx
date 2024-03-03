@@ -68,7 +68,7 @@ function App() {
 
         <div className="m-24 w-auto h-[32rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
           <p className=" text-3xl font-bold">Hi, welcome to my website.</p>
-          <p className=" text-2xl">Click the buttons in the sidebar to find out more about me!</p>
+          <p className=" text-1xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p>
         </div>
 
 
@@ -76,8 +76,17 @@ function App() {
 
         <div id="profile" />
         <main className='bg-stone-700 flex flex-row w-auto h-[38rem] mx-32 mt-12 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
-          <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" width={500} className='absolute left-4 mt-5 drop-shadow-2xl' />
-          <p className='absolute left-1/2 pt-16 text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" className='absolute left-4 mt-5 drop-shadow-2xl w-[45%] h-auto' />
+          <p className='absolute left-1/2 pt-16 text-white'>
+
+            <p className="pb-8 text-xl font-bold">I'm Yves Miguel Reyes</p>
+            <p className="pb-8 ">
+              I am a graduate from the University of Western Australia, majoring in Computer Science.
+            </p>
+            <p className="pb-8 ">
+              I've built various things, from websites to scripts.
+              I can program in C, C#, Java, Scala, Python and Lua.
+            </p>
           </p>
 
           <div className="absolute left-1/2 bottom-[12.5%] text-center text-white bg-blue-500 pl-2 pr-4 rounded-full transition ease-in-out delay-50 hover:scale-105 hover:bg-opacity-100 ">
