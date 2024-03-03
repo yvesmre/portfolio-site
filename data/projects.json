@@ -1,10 +1,26 @@
 [
   {
-    "title": "MyProject",
-    "url": "/hi.com",
-    "slug": "project-1",
-    "splash": "Hello",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image": "./images/icon.png"
+    "title": "ICRAR",
+    "url": "",
+    "slug": "wavedash",
+    "splash": "A dashboard to show data and logs from a buoy from the coast of Western Australia",
+    "description": "",
+    "image": "./images/ICRAR.png"
+  },
+  {
+    "title": "OMEGELUL",
+    "url": "https://github.com/yelnats8/CITS3403-Website/",
+    "slug": "omegelul",
+    "splash": "A chatroom application that matches people up and gives them a topic to talk about.",
+    "description": "",
+    "image": "./images/omegalul.png"
+  },
+  {
+    "title": "Java-Based Quiz Website",
+    "url": "https://github.com/yvesmre/3002-Project",
+    "slug": "java-quiz",
+    "splash": "A quiz website built using vanilla Java.",
+    "description": "",
+    "image": "./images/javaquiz.png"
   }
 ]
