@@ -19,7 +19,7 @@
     "title": "Java-Based Quiz Website",
     "url": "https://github.com/yvesmre/3002-Project",
     "slug": "java-quiz",
-    "splash": "A quiz website built using vanilla Java.",
+    "splash": "A quiz website built using vanilla Java. A proof of concept to demonstrate internet protocol communication between servers",
     "description": "",
     "image": "./images/javaquiz.png"
   }
