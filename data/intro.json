@@ -3,9 +3,11 @@
     "image": "./images/icon.png",
     "text": [
       "I am a graduate from the Univeristy of Western Australia, majoring in Computer Science.",
-      "I've built various things, from websites to scripts. I can program in C, C#, Java, Scala, Python and Lua."
+      "I've built various things, from websites to scripts. I can program in C, C#, Java, Scala, Python and Lua.",
+      "Check out my projects by scrolling down below or by using the navbar on the left.",
+      "Thank you for visiting!"
     ],
 
-    "introduction": "I'm Yves Miguel Reyes"
+    "introduction": "Hi! I'm Yves Miguel Reyes,"
   }
 ]
