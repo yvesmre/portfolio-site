@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 function Main({ children }: any) {
     return <React.Fragment>
-        <div className='bg-gradient-to-b from-emerald-950 to-blue-950 pt-1 w-[100%] h-[100%]'>
+        <div className='bg-gradient-to-b from-emerald-950 to-blue-950 pt-1 w-[100%] min-h-[100dvh] h-auto'>
 
             <div>
                 {children}
