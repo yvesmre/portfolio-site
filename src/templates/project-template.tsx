@@ -1,7 +1,10 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Project from '../components/project';
 import Main from '../components/main';
+import { IoHomeOutline } from 'react-icons/io5';
+import SideBar from '../components/sidebar';
+import SideBarIcon from '../components/sidebar-icon';
 
 const ProjectTemplate = ({ data }: any) => {
     const project = data.projectsJson;
@@ -11,9 +14,20 @@ const ProjectTemplate = ({ data }: any) => {
     const url = project.url;
 
     return (
-        <Main>
-            <Project title={title} description={description} imageData={imageData} url={url}></Project>
-        </Main>
+        <div className=''>
+            <SideBar>
+                <div className="fixed top-[2.5%]">
+                    <Link to='/'>
+                        <SideBarIcon><IoHomeOutline size={25} /></SideBarIcon>
+                    </Link>
+                </div>
+            </SideBar>
+            <div className='absolute left-20 min-w-full'>
+                <Main>
+                    <Project title={title} description={description} imageData={imageData} url={url}></Project>
+                </Main>
+            </div>
+        </div>
     )
 
 }
