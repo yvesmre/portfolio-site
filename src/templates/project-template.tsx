@@ -22,7 +22,7 @@ const ProjectTemplate = ({ data }: any) => {
                     </Link>
                 </div>
             </SideBar>
-            <div className='absolute left-20 min-w-full'>
+            <div className='absolute left-[--sidebar-size] min-w-[--sidebar-offset]'>
                 <Main>
                     <Project title={title} description={description} imageData={imageData} url={url}></Project>
                 </Main>

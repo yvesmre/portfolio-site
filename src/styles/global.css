@@ -6,7 +6,7 @@
 
 @layer components {
   .sidebar-icon {
-    @apply text-emerald-400 bg-gray-700 w-auto p-4 h-auto flex justify-center items-center m-4 rounded-3xl bg-opacity-40 hover:scale-[115%] hover:bg-opacity-100 hover:rounded-xl transition-all duration-100 ease-linear cursor-pointer;
+    @apply text-emerald-400 bg-gray-700 w-auto p-4 h-auto flex justify-center items-center m-[4%] rounded-3xl bg-opacity-40 hover:scale-[115%] hover:bg-opacity-100 hover:rounded-xl transition-all duration-100 ease-linear cursor-pointer;
   }
 }
 
@@ -15,4 +15,27 @@ html * {
   font-optical-sizing: auto;
   font-style: normal;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.169);
+  --sidebar-size: 6%;
+  --sidebar-offset: 94%;
+}
+
+@media only screen and (max-width: 900px) {
+  html * {
+    --sidebar-size: 10%;
+    --sidebar-offset: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html * {
+    --sidebar-size: 12.5%;
+    --sidebar-offset: 87.5%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html * {
+    --sidebar-size: 15%;
+    --sidebar-offset: 85%;
+  }
 }

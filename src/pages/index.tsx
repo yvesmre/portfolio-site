@@ -51,7 +51,7 @@ function App() {
         </button>
       </div>
 
-      <div className="fixed bottom-[5%] w-16 bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
+      <div className="fixed bottom-[5%] w-[4%] bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
         <button onClick={() => handleClickScroll('profile')}>
           <SideBarIcon> <IoPersonOutline size={20} /></SideBarIcon>
         </button>
@@ -64,7 +64,7 @@ function App() {
       </div>
     </SideBar>
 
-    <div className="absolute left-20" id='landing'> {/* TODO: Terrible way of doing this ,change later*/}
+    <div className="absolute left-[--sidebar-size] min-w-[--sidebar-offset]" id='landing'>
       <Main>
 
         <Landing />
