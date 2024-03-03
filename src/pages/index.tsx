@@ -1,3 +1,4 @@
+
 import { IconText } from './../components/icon-text';
 
 import * as React from "react"
@@ -13,6 +14,7 @@ import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { MdContactPhone } from "react-icons/md";
 import { FaGithub, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import Profile from '../components/intro.tsx';
 
 function App() {
   const data = useStaticQuery(graphql`
@@ -34,6 +36,7 @@ function App() {
       }
     }
   }`);
+
 
   const projects = data.allProjectsJson.edges;
 
@@ -123,26 +126,3 @@ function Landing({ }) {
     <p className=" text-1xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p>
   </div>);
 }
-
-function Profile({ }) {
-  return (<><div id="profile" />
-    <main className='bg-stone-700 flex flex-row w-auto h-[38rem] mx-32 mt-12 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl'>
-      <StaticImage src="../../data/images/icon.png" layout="constrained" alt="Me" className='absolute left-4 mt-5 drop-shadow-2xl w-[45%] h-auto' />
-      <p className='absolute left-1/2 pt-16 text-white w-1/2 pr-8'>
-
-        <p className="pb-8 text-xl font-bold">I'm Yves Miguel Reyes</p>
-        <p className="pb-8 ">
-          I am a graduate from the University of Western Australia, majoring in Computer Science.
-        </p>
-        <p className="pb-8 ">
-          I've built various things, from websites to scripts.
-          I can program in C, C#, Java, Scala, Python and Lua.
-        </p>
-      </p>
-
-      <div className="absolute left-1/2 bottom-[12.5%] text-center text-white bg-blue-500 pl-2 pr-4 rounded-full transition ease-in-out delay-50 hover:scale-105 hover:bg-opacity-100 ">
-      </div>
-    </main></>);
-}
-
-
