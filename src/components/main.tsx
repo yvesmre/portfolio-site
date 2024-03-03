@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import *  as React from 'react';
 import "../styles/global.css"
 import { FaGithub } from "react-icons/fa";
+import IconText from './icon-text';
 
 function Main({ children }: any) {
     return <React.Fragment>
@@ -20,8 +21,11 @@ function Main({ children }: any) {
 
 function Footer() {
     return (<div className="absolute bottom-0 flex flex-col w-[100%] h-[8rem] bg-black bg-opacity-5 text-white justify-center items-center">
-        <p className='text-xl pb-4 font-bold underline'> About </p>
-        <p className="hover:text-emerald-500"> <Link to='https://github.com/yvesmre/portfolio-site'><FaGithub size={35} /></Link> </p>
+        <p className='text-lg pb-4 font-bold underline'> About </p>
+        <IconText>
+            <Link to='https://github.com/yvesmre/portfolio-site'>
+                <FaGithub size={30} /></Link>
+        </IconText>
     </div>);
 }
 export default Main
