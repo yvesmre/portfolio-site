@@ -49,6 +49,9 @@ function App() {
   };
 
   return <div className="flex">
+    {/* This is so website isn't zoomed in at the start */}
+    <meta name="viewport" content="width=device-width"></meta>
+
     <SideBar>
       <div className="fixed top-[2.5%]">
         <button onClick={() => handleClickScroll('landing')}>
