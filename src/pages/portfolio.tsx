@@ -40,14 +40,6 @@ function App() {
 
   const projects = data.allPortfolioJson.edges;
 
-  function handleClickScroll(target: string) {
-    const element = document.getElementById(target);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return <div className="flex">
     {/* This is so website isn't zoomed in at the start */}
     <meta name="viewport" content="width=device-width"></meta>
@@ -62,17 +54,6 @@ function App() {
         </Link>
       </div>
 
-      <div className="fixed bottom-[5%] w-[4%] bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
-        <button onClick={() => handleClickScroll('profile')}>
-          <SideBarIcon> <IoPersonOutline size={20} /></SideBarIcon>
-        </button>
-        <button onClick={() => handleClickScroll('projects')}>
-          <SideBarIcon><IoReader size={20} /></SideBarIcon>
-        </button>
-        <button onClick={() => handleClickScroll('contact')}>
-          <SideBarIcon><MdContactPhone size={20} /></SideBarIcon>
-        </button>
-      </div>
     </SideBar>
 
     <div className="absolute left-[--sidebar-size] min-w-[--sidebar-offset]" id='landing'>
