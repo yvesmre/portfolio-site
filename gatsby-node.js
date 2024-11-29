@@ -12,6 +12,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `);
 
+  const portfolio_results = await graphql(`
+    {
+      allPortfolioJson {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `);
+
   if (results.error) {
     reporter.panic("Something failed!");
 
@@ -28,4 +40,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: { slug: project.slug },
     });
   });
+
+  portfolio_results.data.allPortfolioJson.edges.forEach(
+    ({ node: portfolio }) => {
+      const slug = portfolio.slug;
+      createPage({
+        path: `/${slug}/`,
+        component: require.resolve("./src/templates/portfolio-template.tsx"),
+        context: { slug: portfolio.slug },
+      });
+    }
+  );
 };

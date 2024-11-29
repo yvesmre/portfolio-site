@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Melbourne",
+    "url": "",
+    "slug": "portfolio/melbourne",
+    "splash": "Some favorites from Melbourne",
+    "description": "Some shots from my trip to Melbourne. I was there for 6 days during October to see Thom Yorke of Radiohead perform.",
+    "image": "./images/portfolio/melbourne/ladder_edited.jpg"
+  },
+  {
+    "title": "OMEGELUL",
+    "url": "https://github.com/yelnats8/CITS3403-Website/",
+    "slug": "omegelul",
+    "splash": "A chatroom application that matches people up and gives them a topic to talk about.",
+    "description": "This area is under construction, visit the code directly instead below!",
+    "image": "./images/omegalul.png"
+  },
+  {
+    "title": "Java-Based Quiz Website",
+    "url": "https://github.com/yvesmre/3002-Project",
+    "slug": "java-quiz",
+    "splash": "A quiz website built using vanilla Java. A proof of concept to demonstrate internet protocol communication between servers",
+    "description": "This area is under construction, visit the code directly instead below!",
+    "image": "./images/javaquiz.png"
+  }
+]
