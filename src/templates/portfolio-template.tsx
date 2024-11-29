@@ -10,7 +10,7 @@ const PortfolioTemplate = ({ data }: any) => {
     const project = data.portfolioJson;
     const title = project.title;
     const description = project.description;
-    const imageData = project.image.childImageSharp.fluid;
+    const imageData = project.thumbnail.childImageSharp.fluid;
     const url = project.url;
 
     return (
@@ -40,7 +40,7 @@ export const query = graphql`
         title
         description
         url
-        image {
+        thumbnail {
             childImageSharp{
                 fluid {
                 ...GatsbyImageSharpFluid

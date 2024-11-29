@@ -13,7 +13,7 @@ import SideBar from "../components/sidebar.tsx";
 import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { MdContactPhone } from "react-icons/md";
-import { FaGithub, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaGithubSquare, FaLinkedin, FaPhotoVideo } from "react-icons/fa";
 import Profile from '../components/intro.tsx';
 
 function App() {
@@ -54,9 +54,12 @@ function App() {
 
     <SideBar>
       <div className="fixed top-[2.5%]">
-        <button onClick={() => handleClickScroll('landing')}>
+        <Link to='/'>
           <SideBarIcon><IoHomeOutline size={25} /></SideBarIcon>
-        </button>
+        </Link>
+        <Link to='/portfolio'>
+          <SideBarIcon> <FaPhotoVideo size={20} /></SideBarIcon>
+        </Link>
       </div>
 
       <div className="fixed bottom-[5%] w-[4%] bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">

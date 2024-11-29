@@ -13,7 +13,7 @@ import SideBar from "../components/sidebar.tsx";
 import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { MdContactPhone } from "react-icons/md";
-import { FaGithub, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaGithubSquare, FaLinkedin, FaPhotoVideo } from "react-icons/fa";
 import Profile from '../components/intro.tsx';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
           title
           slug
           splash
-          image {
+          thumbnail {
             childImageSharp {
               fluid {
                 ...GatsbyImageSharpFluid
@@ -54,9 +54,12 @@ function App() {
 
     <SideBar>
       <div className="fixed top-[2.5%]">
-        <button onClick={() => handleClickScroll('landing')}>
+        <Link to='/'>
           <SideBarIcon><IoHomeOutline size={25} /></SideBarIcon>
-        </button>
+        </Link>
+        <Link to='/portfolio'>
+          <SideBarIcon> <FaPhotoVideo size={20} /></SideBarIcon>
+        </Link>
       </div>
 
       <div className="fixed bottom-[5%] w-[4%] bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
@@ -78,19 +81,19 @@ function App() {
         <div id='projects' />
         <GridLayout>
           <p className='px-4 h-auto py-16 m-[17.5%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
-            Projects:
+            Galleries:
           </p>
           {projects.map(({ node: project }: any) => {
             const title = project.title
             const slug = project.slug
             const splash = project.splash
-            const imageData = project.image.childImageSharp.fluid;
+            const imageData = project.thumbnail.childImageSharp.fluid;
 
             return (<ProjectPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
           })}
         </GridLayout>
 
-        <div id="contact" className="text-white bg-stone-700 flex flex-col h-[20rem] mx-40 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center">
+        {/* <div id="contact" className="text-white bg-stone-700 flex flex-col h-[20rem] mx-40 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center">
 
 
           <p className="p-4 text-3xl font-bold underline">
@@ -109,7 +112,7 @@ function App() {
               </Link>
             </IconText>
           </div>
-        </div>
+        </div> */}
 
       </Main>
     </div>
