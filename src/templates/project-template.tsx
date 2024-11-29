@@ -5,6 +5,7 @@ import Main from '../components/main';
 import { IoHomeOutline } from 'react-icons/io5';
 import SideBar from '../components/sidebar';
 import SideBarIcon from '../components/sidebar-icon';
+import { FaPhotoVideo } from 'react-icons/fa';
 
 const ProjectTemplate = ({ data }: any) => {
     const project = data.projectsJson;
@@ -19,6 +20,9 @@ const ProjectTemplate = ({ data }: any) => {
                 <div className="fixed top-[2.5%]">
                     <Link to='/'>
                         <SideBarIcon><IoHomeOutline size={25} /></SideBarIcon>
+                    </Link>
+                    <Link to='/portfolio'>
+                        <SideBarIcon> <FaPhotoVideo size={20} /></SideBarIcon>
                     </Link>
                 </div>
             </SideBar>
