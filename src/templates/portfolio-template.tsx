@@ -72,9 +72,10 @@ export const query = graphql`
         }
     }
 
-    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, relativeDirectory: {eq: $slug}}) {
+    allFile(filter: {extension: {regex: "/(jpg)|(jpeg)|(png)/"}, relativeDirectory: {eq: $slug}}, sort: {name:ASC}) {
         edges {
             node {
+                name
                 childImageSharp{
                     fluid {
                     ...GatsbyImageSharpFluid
