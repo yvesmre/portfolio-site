@@ -37,7 +37,7 @@ const PortfolioTemplate = ({ data }: any) => {
 
                     <div id='gallery'>
 
-                        <main className='flex flex-row  flex-wrap w-[90%] mx-[10%] [&>*:nth-child(2n)]:bg-stone-600 [&>*:nth-child(2n)]:bg-opacity-75
+                        <main className='flex flex-row  flex-wrap w-[100%] mx-[10%] [&>*:nth-child(2n)]:bg-stone-600 [&>*:nth-child(2n)]:bg-opacity-75
         [&>*:nth-child(2n-1)]:bg-stone-600 [&>*:nth-child(2n-1)]:bg-opacity-75 '  >
                             {images.map(({ node: image }: any) => {
                                 console.log(image.childImageSharp.fluid)
