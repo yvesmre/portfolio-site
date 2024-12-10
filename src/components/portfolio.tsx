@@ -19,7 +19,7 @@ function Portfolio({ title, imageData, description, url }: any) {
         </div>
 
 
-        {descriptions.map((desc: any) => {
+        {descriptions.map((desc: String) => {
             return <p className='text-center text-xl pt-4 pb-4 w-1/2 text-white'>
                 {desc}
             </p>
