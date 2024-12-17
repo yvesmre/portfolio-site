@@ -129,8 +129,11 @@ export default App
 function Landing({ }) {
   return (<div className="m-24 w-auto h-[24rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
     <div className="scale-75">
-      <p className=" text-4xl font-bold">Hi, welcome to my website.</p>
-      <p className=" text-2xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p>
+      <p className=" text-4xl font-bold">Hi, and welcome to my website.</p>
+      {/* <p className=" text-2xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p> */}
+      <p className=" text-2xl">Here you can find everything about me and my various work.</p>
+      <p></p>
+      <p className='text-4xl font-semi-bold'>Scroll down to explore!</p>
     </div>
-  </div>);
+  </div >);
 }
