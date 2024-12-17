@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Melbourne",
+    "url": "",
+    "slug": "portfolio/melbourne",
+    "splash": "Some favorites from a recent Melbourne trip.",
+    "description": "Some shots from my trip to Melbourne. I was there for 6 days during October to see Thom Yorke of Radiohead perform. \n Shot on Kodak Colorplus 200 at box speed.",
+    "thumbnail": "./portfolio/melbourne/ladder_edited.jpg"
+  },
+  {
+    "title": "The Hillaries and Joint Camp",
+    "url": "",
+    "slug": "portfolio/joint_camp",
+    "splash": "Photos during a joint weekend event between three clubs in UWA.",
+    "description": "A weekend long event shared between the University Computer Club, University Science Fiction and Fantasy Association, and Unigames in Cameron Hall of the University of Western Australia. \n Shot on Kodak Ultramax 400 pushed by one stop for night shooting and Kodak Vision3 250D.",
+    "thumbnail": "./portfolio/joint_camp/000046_edited_2.JPG"
+  }
+]
