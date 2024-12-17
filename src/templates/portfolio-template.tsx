@@ -16,7 +16,6 @@ const PortfolioTemplate = ({ data }: any) => {
     const imageData = project.thumbnail.childImageSharp.fluid;
     const url = project.url;
 
-
     const images = data.allFile.edges;
 
     return (
@@ -46,8 +45,6 @@ const PortfolioTemplate = ({ data }: any) => {
 
                         </main>
                     </div>
-
-
                 </Main>
             </div>
         </div>
