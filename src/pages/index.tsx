@@ -12,8 +12,8 @@ import Main from "../components/main.tsx";
 import SideBar from "../components/sidebar.tsx";
 import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
-import { MdContactPhone } from "react-icons/md";
-import { FaGithub, FaGithubSquare, FaLinkedin, FaPhotoVideo } from "react-icons/fa";
+import { MdContactPhone, MdEmail } from "react-icons/md";
+import { FaGithub, FaGithubSquare, FaLinkedin, FaMailBulk, FaPhotoVideo } from "react-icons/fa";
 import Profile from '../components/intro.tsx';
 
 function App() {
@@ -107,13 +107,19 @@ function App() {
           <div className="flex flex-row justify-center items-center">
             <IconText text='LinkedIn'>
               <Link to='https://www.linkedin.com/in/yves-miguel-reyes-051667234/'>
-                <FaLinkedin size={40} />
+                <FaLinkedin size={50} />
               </Link>
             </IconText>
 
             <IconText text='Github'>
               <Link to='https://github.com/yvesmre'>
-                <FaGithubSquare size={40} />
+                <FaGithubSquare size={50} />
+              </Link>
+            </IconText>
+
+            <IconText text='Gmail'>
+              <Link to='mailto:yvesmiguelreyes1@gmail.com'>
+                <MdEmail size={50} />
               </Link>
             </IconText>
           </div>

@@ -21,7 +21,7 @@ function Main({ children }: any) {
 
 function Footer() {
     return (<div className="absolute bottom-0 flex flex-col w-[100%] h-[8rem] bg-black bg-opacity-5 text-white justify-center items-center">
-        <p className='text-lg pb-4 font-bold underline'> About </p>
+        <Link to='/about'> <p className='text-lg pb-4 font-bold underline hover:text-emerald-500 hover:scale-110 transition ease-in-out'> About </p> </Link>
         <IconText>
             <Link to='https://github.com/yvesmre/portfolio-site'>
                 <FaGithub size={30} /></Link>
