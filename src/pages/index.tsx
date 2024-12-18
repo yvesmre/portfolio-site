@@ -13,7 +13,7 @@ import SideBar from "../components/sidebar.tsx";
 import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { MdContactPhone, MdEmail } from "react-icons/md";
-import { FaGithub, FaGithubSquare, FaLinkedin, FaMailBulk, FaPhotoVideo } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaPhotoVideo } from "react-icons/fa";
 import Profile from '../components/intro.tsx';
 
 function App() {

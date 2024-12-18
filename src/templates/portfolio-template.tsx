@@ -7,7 +7,6 @@ import SideBar from '../components/sidebar';
 import SideBarIcon from '../components/sidebar-icon';
 import { FaPhotoVideo } from 'react-icons/fa';
 import Image from 'gatsby-image'
-import GridLayout from '../components/layout';
 
 const PortfolioTemplate = ({ data }: any) => {
     const project = data.portfolioJson;

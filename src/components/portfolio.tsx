@@ -1,10 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby';
-import Image from 'gatsby-image'
-import "../styles/global.css"
-import { IoHomeOutline } from 'react-icons/io5';
-import SideBarIcon from './sidebar-icon';
-import SideBar from './sidebar';
+import React from 'react';
+import Image from 'gatsby-image';
+import "../styles/global.css";
 
 
 
