@@ -20,6 +20,7 @@ const PortfolioTemplate = ({ data }: any) => {
 
     return (
         <div className=''>
+            <title>{title}</title>
             <SideBar>
                 <div className="fixed top-[2.5%]">
                     <Link to='/'>

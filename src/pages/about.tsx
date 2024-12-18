@@ -1,5 +1,5 @@
 
-import { IconText } from './../components/icon-text';
+import { IconText } from '../components/icon-text.tsx';
 
 import * as React from "react"
 import GridLayout from '../components/layout.tsx'
@@ -51,7 +51,8 @@ function App() {
   return <div className="flex">
     {/* This is so website isn't zoomed in at the start */}
     <meta name="viewport" content="width=device-width"></meta>
-    <title>Yves Miguel Reyes - Home</title>
+    <title>About</title>
+
     <SideBar>
       <div className="fixed top-[2.5%]">
         <Link to='/'>
@@ -76,50 +77,12 @@ function App() {
     </SideBar>
 
     <div className="absolute left-[--sidebar-size] min-w-[--sidebar-offset]" id='landing'>
-      <Main>
+      <div className='bg-gradient-to-b from-emerald-950 to-blue-950 pt-1 w-[100%] h-auto min-h-[100dvh] pb-[8rem] '>
 
         <Landing />
 
-        <Profile />
 
-
-        <div id='projects' />
-        <GridLayout >
-          <p className='px-4 h-auto py-16 m-[17.5%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
-            Projects:
-          </p>
-          {projects.map(({ node: project }: any) => {
-            const title = project.title
-            const slug = project.slug
-            const splash = project.splash
-            const imageData = project.image.childImageSharp.fluid;
-
-            return (<ProjectPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
-          })}
-        </GridLayout>
-
-        <div id="contact" className="text-white bg-stone-700 flex flex-col h-[20rem] mx-40 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center">
-
-
-          <p className="p-4 text-3xl font-bold underline">
-            Contact:
-          </p>
-          <div className="flex flex-row justify-center items-center">
-            <IconText text='LinkedIn'>
-              <Link to='https://www.linkedin.com/in/yves-miguel-reyes-051667234/'>
-                <FaLinkedin size={40} />
-              </Link>
-            </IconText>
-
-            <IconText text='Github'>
-              <Link to='https://github.com/yvesmre'>
-                <FaGithubSquare size={40} />
-              </Link>
-            </IconText>
-          </div>
-        </div>
-
-      </Main>
+      </div>
     </div>
   </div >
 }
@@ -129,11 +92,11 @@ export default App
 function Landing({ }) {
   return (<div className="m-24 w-auto h-[24rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
     <div className="scale-75">
-      <p className=" text-4xl font-bold">Hi, and welcome to my website.</p>
-      {/* <p className=" text-2xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p> */}
-      <p className=" text-2xl">Here you can find everything about me and my various work.</p>
-      <p></p>
-      <p className='text-4xl font-semi-bold'>Scroll down to explore!</p>
+      <p className=" text-4xl font-bold underline">About </p>
+      <p className=" text-2xl">This website was written in TypeScript and JavaScript, using the <b>React</b> framework with <b>Gatsby</b> providing the backend static site generation and integration with <b>Github Pages</b>
+        .</p>
+
+      <p className='text-2xl underline'> View the source for this website on the <Link to='https://github.com/yvesmre/portfolio-site' className='hover:text-emerald-500 hover:scale-110 transition ease-in-out' >Github repository.</Link></p>
     </div>
   </div >);
 }
