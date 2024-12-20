@@ -7,7 +7,6 @@ import SideBar from '../components/sidebar';
 import SideBarIcon from '../components/sidebar-icon';
 import { FaPhotoVideo } from 'react-icons/fa';
 import Image from 'gatsby-image'
-import GridLayout from '../components/layout';
 
 const PortfolioTemplate = ({ data }: any) => {
     const project = data.portfolioJson;
@@ -16,11 +15,11 @@ const PortfolioTemplate = ({ data }: any) => {
     const imageData = project.thumbnail.childImageSharp.fluid;
     const url = project.url;
 
-
     const images = data.allFile.edges;
 
     return (
         <div className=''>
+            <title>{title}</title>
             <SideBar>
                 <div className="fixed top-[2.5%]">
                     <Link to='/'>
@@ -46,8 +45,6 @@ const PortfolioTemplate = ({ data }: any) => {
 
                         </main>
                     </div>
-
-
                 </Main>
             </div>
         </div>

@@ -12,15 +12,15 @@
     "url": "https://github.com/yelnats8/CITS3403-Website/",
     "slug": "omegelul",
     "splash": "A chatroom application that matches people up and gives them a topic to talk about.",
-    "description": "This area is under construction, visit the code directly instead below!",
+    "description": "As part of a course on Agile Web Development. This is a simple chat application that pairs two random users together with a given randomly selected topic for them to discuss. Inspired by a removed feature from OMEGLE. Developed using the Flask micro-framework.",
     "image": "./images/omegalul.png"
   },
   {
     "title": "Java-Based Quiz Website",
     "url": "https://github.com/yvesmre/3002-Project",
     "slug": "java-quiz",
-    "splash": "A quiz website built using vanilla Java. A proof of concept to demonstrate internet protocol communication between servers",
-    "description": "This area is under construction, visit the code directly instead below!",
+    "splash": "A quiz website built using base Java. A proof of concept to demonstrate internet protocol communication between servers.",
+    "description": "Part of a unit on computer networking and communication.  This project involved linking a front-end facing quiz service to a separate and disparate backend database, with only TCP/IP packets to communicate with. My main responsibility was developing the front-end facing part of the website, which is a simple web-server that servers HTML over HTTP to a web browser. Written in Java. ",
     "image": "./images/javaquiz.png"
   }
 ]
