@@ -1,5 +1,21 @@
 [
   {
+    "title": "Low Light Studies",
+    "url": "",
+    "slug": "portfolio/lowlight",
+    "splash": "A collection of shots that err more on the side of experiment as a result of being low light and usually pushed. Usually shot at gigs.",
+    "description": "",
+    "thumbnail": "./portfolio/lowlight/claudia_1.jpg"
+  },
+  {
+    "title": "Perth Studies",
+    "url": "",
+    "slug": "portfolio/perth",
+    "splash": "An assortment of compositions shot all over Perth, without a specific event or trip to thematically link them.",
+    "description": "",
+    "thumbnail": "./portfolio/perth/queens_garden_1.jpg"
+  },
+  {
     "title": "October in Melbourne",
     "url": "",
     "slug": "portfolio/melbourne",
@@ -19,7 +35,7 @@
     "title": "Sydney New Year's Week",
     "url": "",
     "slug": "portfolio/sydney_2024",
-    "splash": "Spending the final 7 days of 2024 in Sydney. Documented on Film",
+    "splash": "Spending the final 7 days of 2024 in Sydney. Documented on film.",
     "description": "Flew over to Sydney to catch the the fireworks and shoot some film in between. \n Shot on Kodak Colorplus, Fuji Industrial 400, Cinestill 800t, and Kodak Gold.",
     "thumbnail": "./portfolio/sydney_2024/Bondi-6.jpg"
   }
