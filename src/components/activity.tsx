@@ -7,6 +7,7 @@ function Activity() {
   const data = useStaticQuery(graphql`
     query {
         activityJson {
+          date
           text
           image {
             childImageSharp
@@ -30,10 +31,11 @@ function Activity() {
           <Image fluid={data.activityJson.image.childImageSharp.fluid} className="drop-shadow-2xl" />
         </div> */}
         <p className='text-white'>
-        <p className="pb-8 text-4xl font-bold"> What am I currently up to? </p>
+        <p className="pb-12 text-4xl font-bold"> What am I currently up to? </p>
+        <p className="pb-8 text-2xl underline"> {data.activityJson.date} </p>
           {data.activityJson.text.map((text: any) => {
             console.log(text)
-            return <p className="pb-8 text-2xl">
+            return <p className="pb-4 text-2xl">
               {text}
             </p>
           })}
