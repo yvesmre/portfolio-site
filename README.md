@@ -1,8 +1,8 @@
-## Portfolio Website built using Gatsby with TypeScript and Tailwind
+# Portfolio Website built using Gatsby with TypeScript and Tailwind
+
+This is the codebase for my personal website.
 
 
-
-
-# TODO
+## TODO
 
 * Drop deprecated Gatsby Image Sharp in webpages
