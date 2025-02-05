@@ -1,18 +1,42 @@
 [
   {
-    "title": "Melbourne",
+    "title": "Low Light Studies",
+    "url": "",
+    "slug": "portfolio/lowlight",
+    "splash": "A collection of shots that err more on the side of experiment as a result of being low light and usually pushed. Usually shot at gigs.",
+    "description": "Shots that are composed in low light, often experiemntal or pushed film to achive the speed required to hand hold.",
+    "thumbnail": "./portfolio/lowlight/claudia_1.jpg"
+  },
+  {
+    "title": "Perth Studies",
+    "url": "",
+    "slug": "portfolio/perth",
+    "splash": "An assortment of compositions shot all over Perth, without a specific event or trip to thematically link them.",
+    "description": "These are compositions with no thematic link between them other than capturing Perth like how I like it, like a painting.",
+    "thumbnail": "./portfolio/perth/queens_garden_1.jpg"
+  },
+  {
+    "title": "October in Melbourne",
     "url": "",
     "slug": "portfolio/melbourne",
-    "splash": "Some favorites from a recent Melbourne trip.",
+    "splash": "Some favorites from a trip to Melbourne in October.",
     "description": "Some shots from my trip to Melbourne. I was there for 6 days during October to see Thom Yorke of Radiohead perform. \n Shot on Kodak Colorplus 200 at box speed.",
     "thumbnail": "./portfolio/melbourne/ladder_edited.jpg"
   },
   {
     "title": "The Hillaries and Joint Camp",
     "url": "",
-    "slug": "portfolio/joint_camp",
+    "slug": "portfolio/joint_camp_2024",
     "splash": "Photos during a joint weekend event between three clubs in UWA.",
     "description": "A weekend long event shared between the University Computer Club, University Science Fiction and Fantasy Association, and Unigames in Cameron Hall of the University of Western Australia. \n Shot on Kodak Ultramax 400 pushed by one stop for night shooting and Kodak Vision3 250D.",
-    "thumbnail": "./portfolio/joint_camp/000046_edited_2.JPG"
+    "thumbnail": "./portfolio/joint_camp_2024/000046_edited_2.JPG"
+  },
+  {
+    "title": "Sydney New Year's Week",
+    "url": "",
+    "slug": "portfolio/sydney_2024",
+    "splash": "Spending the final 7 days of 2024 in Sydney. Documented on film.",
+    "description": "Flew over to Sydney to catch the the fireworks and shoot some film in between. \n Shot on Kodak Colorplus, Fuji Industrial 400, Cinestill 800t, and Kodak Gold.",
+    "thumbnail": "./portfolio/sydney_2024/Bondi-6.jpg"
   }
 ]
