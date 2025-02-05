@@ -9,7 +9,7 @@ import Main from "../components/main.tsx";
 import SideBar from "../components/sidebar.tsx";
 import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
-import {  FaPhotoVideo } from "react-icons/fa";
+import { FaPhotoVideo } from "react-icons/fa";
 
 function App() {
   const data = useStaticQuery(graphql`
