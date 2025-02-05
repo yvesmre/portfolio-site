@@ -14,7 +14,8 @@ import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { MdContactPhone, MdEmail } from "react-icons/md";
 import { FaGithubSquare, FaLinkedin, FaPhotoVideo } from "react-icons/fa";
-import Profile from '../components/intro.tsx';
+import Profile from '../components/profile.tsx';
+import Activity from '../components/activity.tsx';
 
 function App() {
   const data = useStaticQuery(graphql`
@@ -81,6 +82,8 @@ function App() {
         <Landing />
 
         <Profile />
+
+        <Activity />
 
 
         <div id='projects' />
