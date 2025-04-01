@@ -2,10 +2,10 @@
   {
     "title": "Portfolio",
     "url": "",
-    "slug": "portfolio/curated",
+    "slug": "portfolio/selected_works",
     "splash": "Collection of selected work.",
     "description": "A curated collection of photographic work. Shot on celluloid film.",
-    "thumbnail": "./portfolio/curated/Bondi Icebergs.jpg"
+    "thumbnail": "./portfolio/selected_works/Bondi Icebergs.jpg"
   },
   {
     "title": "Memory Hole",
