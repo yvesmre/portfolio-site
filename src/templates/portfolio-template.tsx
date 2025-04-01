@@ -7,12 +7,13 @@ import SideBar from '../components/sidebar';
 import SideBarIcon from '../components/sidebar-icon';
 import { FaPhotoVideo } from 'react-icons/fa';
 import Image from 'gatsby-image'
+import { GatsbyImage, getSrc } from 'gatsby-plugin-image';
 
 const PortfolioTemplate = ({ data }: any) => {
     const project = data.portfolioJson;
     const title = project.title;
     const description = project.description;
-    const imageData = project.thumbnail.childImageSharp.fluid;
+    const imageData = project.thumbnail.childImageSharp.gatsbyImageData;
     const url = project.url;
 
     const images = data.allFile.edges;
@@ -40,7 +41,7 @@ const PortfolioTemplate = ({ data }: any) => {
                             {images.map(({ node: image }: any) => {
                                 // console.log(image.childImageSharp.fluid)
                                 return <div className="h-1/4 w-1/4 p-2 m-4 drop-shadow-2xl bg-gray-300 bg-opacity-75 transition ease-in-out delay-100 hover:scale-110 hover:bg-opacity-100">
-                                    <Image fluid={image.childImageSharp.fluid} /> </div>
+                                    <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={'Body image'} /> </div>
                             })}
 
                         </main>
@@ -62,9 +63,7 @@ export const query = graphql`
         url
         thumbnail {
             childImageSharp{
-                fluid {
-                ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData
             }
         }
     }
@@ -74,9 +73,10 @@ export const query = graphql`
             node {
                 name
                 childImageSharp{
-                    fluid {
-                    ...GatsbyImageSharpFluid
-                        }
+                    gatsbyImageData (
+                    placeholder: BLURRED
+                    formats: [AUTO]
+                    )
             }
         }
     }
@@ -86,3 +86,24 @@ export const query = graphql`
 
 
 export default PortfolioTemplate
+
+export const Head = ({ data }: any) => {
+
+    const project = data.portfolioJson;
+    const title = project.title;
+    const description = project.description;
+    const imageData = project.thumbnail;
+
+    const src = getSrc(imageData)
+    const url = project.url;
+
+    const images = data.allFile.edges;
+
+    return <>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:image" content={src} />
+        <meta name="twitter:image" content={src} />
+        <meta itemProp='image' content={src} />
+    </>
+}
