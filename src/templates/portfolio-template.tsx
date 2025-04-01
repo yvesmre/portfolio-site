@@ -6,7 +6,6 @@ import { IoHomeOutline } from 'react-icons/io5';
 import SideBar from '../components/sidebar';
 import SideBarIcon from '../components/sidebar-icon';
 import { FaPhotoVideo } from 'react-icons/fa';
-import Image from 'gatsby-image'
 import { GatsbyImage, getSrc } from 'gatsby-plugin-image';
 
 const PortfolioTemplate = ({ data }: any) => {
@@ -60,6 +59,7 @@ export const query = graphql`
     portfolioJson(slug: {eq: $slug}) {
         title
         description
+        splash
         url
         thumbnail {
             childImageSharp{
@@ -94,7 +94,7 @@ export const Head = ({ data }: any) => {
 
     const project = data.portfolioJson;
     const title = project.title;
-    const description = project.description;
+    const splash = project.splash;
     const imageData = project.thumbnail;
 
     const src = getSrc(imageData)
@@ -104,7 +104,7 @@ export const Head = ({ data }: any) => {
 
     return <>
         <title>{title}</title>
-        <meta name="description" content={description} />
+        <meta name="description" content={splash} />
         <meta property="og:image" content={src} />
         <meta name="twitter:image" content={src} />
         <meta itemProp='image' content={src} />
