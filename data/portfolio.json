@@ -1,5 +1,13 @@
 [
   {
+    "title": "Portfolio",
+    "url": "",
+    "slug": "portfolio/selected_works",
+    "splash": "Collection of selected work.",
+    "description": "A curated collection of photographic work. Shot on celluloid film.",
+    "thumbnail": "./portfolio/selected_works/Bondi Icebergs.jpg"
+  },
+  {
     "title": "Memory Hole",
     "url": "",
     "slug": "portfolio/memory_hole",
@@ -46,5 +54,13 @@
     "splash": "Spending the final 7 days of 2024 in Sydney. Documented on film.",
     "description": "Flew over to Sydney to catch the the fireworks and shoot some film in between. \n Shot on Kodak Colorplus, Fuji Industrial 400, Cinestill 800t, and Kodak Gold.",
     "thumbnail": "./portfolio/sydney_2024/Bondi-6.jpg"
+  },
+  {
+    "title": "Philippines 2025",
+    "url": "",
+    "slug": "portfolio/philippines_2025",
+    "splash": "A weeklong visit to some old favorites in the old country.",
+    "description": "A weeklong visit to some old favorites in the old country. Shot on various film stocks on the Leica M5.",
+    "thumbnail": "./portfolio/philippines_2025/Mountain Watching.jpg"
   }
 ]
