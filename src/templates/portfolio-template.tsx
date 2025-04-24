@@ -36,10 +36,10 @@ const PortfolioTemplate = ({ data }: any) => {
 
                     <div id='gallery'>
 
-                        <main className='flex flex-row  flex-wrap w-[100%] mx-[10%]'  >
+                        <main className='flex flex-row  flex-wrap w-[100%] sm:mx-[10%]'  >
                             {images.map(({ node: image }: any) => {
                                 // console.log(image.childImageSharp.fluid)
-                                return <div className="h-1/4 w-1/4 p-2 m-4 drop-shadow-2xl bg-gray-300 bg-opacity-75 transition ease-in-out delay-100 hover:scale-110 hover:bg-opacity-100">
+                                return <div className="h-1/4 sm:w-1/4 min-w-56 sm:ml-0 p-2 m-4 drop-shadow-2xl bg-gray-300 bg-opacity-75 transition ease-in-out delay-100 hover:scale-110 hover:bg-opacity-100">
                                     <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={'Body image'} /> </div>
                             })}
 

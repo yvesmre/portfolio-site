@@ -25,7 +25,7 @@ function Activity() {
   const text = data.activityJson.text
 
   return <div id="profile">
-    <main className='bg-stone-700 flex flex-col w-auto h-[auto] mx-32 mt-12 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center'>
+    <main className='bg-stone-700 flex flex-col w-auto h-[auto] sm:mx-32 mx-12 mt-12 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center'>
       <div className="scale-[80%]">
         {/* <div className="bg-stone-800 rounded-3xl  p-8  mb-8 drop-shadow-2xl w-[67%]">
           <Image fluid={data.activityJson.image.childImageSharp.fluid} className="drop-shadow-2xl" />
