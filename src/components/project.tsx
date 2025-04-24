@@ -13,9 +13,9 @@ function Project({ title, imageData, description, url }: any) {
     return <div className="flex flex-col  justify-center items-center">
 
 
-        <div className="text-white text-4xl font-bold pb-8 pt-8">{title}</div>
+        <div className="text-white sm:text-4xl text-xl font-bold pb-8 pt-8">{title}</div>
 
-        <div className="h-1/4 w-1/4 p-4 m-4 drop-shadow-2xl bg-gray-700 bg-opacity-75 rounded-3xl transition ease-in-out delay-100 hover:scale-110 hover:bg-opacity-100">
+        <div className="h-1/4 sm:w-1/4 w-[100%] p-4 sm:m-4 drop-shadow-2xl bg-gray-700 bg-opacity-75 rounded-3xl transition ease-in-out delay-100 hover:scale-110 hover:bg-opacity-100">
             <p>  <Image fluid={imageData} /> </p>
         </div>
 
