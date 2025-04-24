@@ -101,10 +101,9 @@ function App() {
           })}
         </GridLayout>
 
-        <div id="contact" className="text-white bg-stone-700 flex flex-col h-[20rem] mx-40 mt-16 mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center">
+        <div id="contact" className="text-white bg-stone-700 flex flex-col md:h-[20rem] md:mx-40 mx-4 md:mt-16 md:mb-16 relative bg-opacity-80 shadow-2xl rounded-xl justify-center items-center">
 
-
-          <p className="p-4 text-3xl font-bold underline">
+          <p className="p-4 sm:text-3xl text-xl font-bold underline">
             Contact:
           </p>
           <div className="flex flex-row justify-center items-center">
@@ -136,7 +135,7 @@ function App() {
 export default App
 
 function Landing({ }) {
-  return (<div className="m-24 w-auto h-[24rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
+  return (<div className="md:m-24 mx-12 md:w-auto md:h-[24rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
     <div className="scale-75">
       <p className=" text-4xl font-bold">Hi, and welcome to my website.</p>
       {/* <p className=" text-2xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p> */}
