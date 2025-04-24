@@ -63,7 +63,7 @@ function App() {
         </Link>
       </div>
 
-      <div className="fixed bottom-[5%] w-[4%] bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
+      <div className="fixed bottom-[5%] sm:p-2 size-fit bg-stone-700 rounded-3xl bg-opacity-40 flex flex-col items-center justify-center">
         <button onClick={() => handleClickScroll('profile')}>
           <SideBarIcon> <IoPersonOutline size={20} /></SideBarIcon>
         </button>
