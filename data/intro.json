@@ -1,15 +1,18 @@
 [
   {
     "image": "./images/profile.jpg",
+    "introduction": "Hi! I'm Yves Miguel Reyes,",
     "text": [
       "I am a graduate from the University of Western Australia, majoring in Computer Science.",
-      "I've built various things, from websites to scripts. I write in C, C#, Java, Scala, Python and Lua.",
+      "I've built various things, from websites to scripting solutions. I write in C, C#, Java, Scala, Python and Lua.",
       "Check out my projects by scrolling down below or by using the navbar on the left.",
       "",
       "I am also a photographer by hobby, feel free to check out my work in the sidebar below the home button!",
-      "Thank you for visiting!"
-    ],
+      "Thank you for visiting!",
 
-    "introduction": "Hi! I'm Yves Miguel Reyes,"
+      "",
+
+      "You can find my contact details by clicking the ID icon on the navbar (bottom most)."
+    ]
   }
 ]

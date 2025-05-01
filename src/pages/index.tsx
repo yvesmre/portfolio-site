@@ -119,7 +119,7 @@ function App() {
               </Link>
             </IconText>
 
-            <IconText text='Gmail'>
+            <IconText text='Email'>
               <Link to='mailto:yvesmiguelreyes1@gmail.com'>
                 <MdEmail size={50} />
               </Link>
