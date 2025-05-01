@@ -1,10 +1,9 @@
 [
   {
-    "date": "February, 4, 2025",
+    "date": "April, 24, 2025",
     "image": "./images/profile.jpg",
-    "text": ["I am currently exploring WebGL and Dart!",
-    "WebGL has always fascinated me as someone who developed games with OpenGL as a young teenager.", 
-    "As I find myself doing most things in a web context these days, it seemed liked something I should've learned a long time ago."
+    "text": ["Mobile compatibility!",
+    "This website has seen a few changes in the backend, mainly supporting vertical aspect ratios. Still not perfect, but a massive leap over its previous incarnation."
     ]
   }
 ]
