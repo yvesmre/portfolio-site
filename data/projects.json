@@ -22,5 +22,13 @@
     "splash": "A quiz website built using base Java. A proof of concept to demonstrate internet protocol communication between servers.",
     "description": "Part of a unit on computer networking and communication.  This project involved linking a front-end facing quiz service to a separate and disparate backend database, with only TCP/IP packets to communicate with. My main responsibility was developing the front-end facing part of the website, which is a simple web-server that servers HTML over HTTP to a web browser. Written in Java. ",
     "image": "./images/javaquiz.png"
+  },
+  {
+    "title": "Trello and MYOB Tools",
+    "url": "https://github.com/yvesmre/Trello-izer",
+    "slug": "trello-izer",
+    "splash": "A collection of Trello and MYOB tools for communicating with the API.",
+    "description": "Main collection of work from my time at K-Drive. Collection of various functions that tie to MYOB and Trello APIs linked together by various scripts to help automate various aspects of the company.",
+    "image": "./images/trello.png"
   }
 ]
