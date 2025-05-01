@@ -11,7 +11,7 @@ const ProjectPreview = ({ title, slug, imageData, splash }: any) => (
             <Link to={`/${slug}/`}>{title}</Link>
         </h2>
         <p className='text-stone-200 py-2 text-md'> {splash} </p>
-        <ViewButton slug={slug} text={"View Project"} />
+        <ViewButton slug={slug} text={"View Collection"} />
     </div >
 );
 
