@@ -1,9 +1,10 @@
 [
   {
-    "date": "April, 24, 2025",
+    "date": "May, 1, 2025",
     "image": "./images/profile.jpg",
-    "text": ["Mobile compatibility!",
-    "This website has seen a few changes in the backend, mainly supporting vertical aspect ratios. Still not perfect, but a massive leap over its previous incarnation."
+    "text": [
+      "App Tracker",
+      "I'm currently working on an application that would help me organize myself."
     ]
   }
 ]
