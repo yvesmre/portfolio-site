@@ -55,10 +55,17 @@ function App() {
       <Main>
 
         <div id='projects' />
+        <p className='px-4 h-auto pl-4 pr-4 py-24 m-[17.5%] bg-stone-500 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl text-center'>
+          Galleries:
+        </p>
         <GridLayout>
-          <p className='px-4 h-auto py-16 m-[17.5%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
-            Galleries:
-          </p>
+          <a href="https://yvesm.darkroom.com" className="sm:size-fit md:w-1/2 h-2/6 pl-8 pr-16 py-32 text-white bg-stone-700 bg-opacity-75 shadow-2xl rounded-xl transition ease-in-out delay-100 hover:scale-105 hover:bg-opacity-100" >
+            <div >
+              <h2 className='text-2xl  font-bold'>
+                You can buy prints of some of the work here.
+              </h2>
+            </div>
+          </a>
           {projects.map(({ node: project }: any) => {
             const title = project.title
             const slug = project.slug
