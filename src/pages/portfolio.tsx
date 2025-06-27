@@ -59,13 +59,13 @@ function App() {
           Galleries:
         </p>
         <GridLayout>
-          <a href="https://yvesm.darkroom.com" className="sm:size-fit md:w-1/2 h-2/6 pl-8 pr-16 py-32 text-white bg-stone-700 bg-opacity-75 shadow-2xl rounded-xl transition ease-in-out delay-100 hover:scale-105 hover:bg-opacity-100" >
+          <Link to="https://yvesm.darkroom.com" className="sm:size-fit md:w-1/2 h-2/6 pl-8 pr-16 py-32 text-white bg-stone-700 bg-opacity-75 shadow-2xl rounded-xl transition ease-in-out delay-100 hover:scale-105 hover:bg-opacity-100" >
             <div >
               <h2 className='text-2xl  font-bold'>
                 You can buy prints of some of the work here.
               </h2>
             </div>
-          </a>
+          </Link>
           {projects.map(({ node: project }: any) => {
             const title = project.title
             const slug = project.slug
