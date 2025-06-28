@@ -34,7 +34,7 @@
   {
     "title": "Minecraft Alpha Chunk Culler",
     "url": "https://github.com/yvesmre/Alpha-Chunk-Culler",
-    "slug": "trello-izer",
+    "slug": "alpha-tool",
     "splash": "A simple tool to delete chunks past the 36x36 area of spawn in the original alpha Minecraft file format.",
     "description": "In the absence of a version of MCEdit that could read Minecraft Alpha files, I designed this application to delete chunks past a 36x36 chunk radius around the center spawn chunks. Useful for people who want to do a \"through the years\" playthrough where they progress through versions of the game. Programmed in Java.",
     "image": "./images/grass_block_alpha.png"
