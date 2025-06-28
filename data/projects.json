@@ -1,5 +1,13 @@
 [
   {
+    "title": "Trello and MYOB Tools",
+    "url": "https://github.com/yvesmre/Trello-izer",
+    "slug": "trello-izer",
+    "splash": "A collection of Trello and MYOB tools for communicating with the API.",
+    "description": "Main collection of work from my time at K-Drive. Collection of various functions that tie to MYOB and Trello APIs linked together by various scripts to help automate various aspects of the company.",
+    "image": "./images/trello.png"
+  },
+  {
     "title": "ICRAR",
     "url": "",
     "slug": "wavedash",
@@ -16,7 +24,7 @@
     "image": "./images/omegalul.png"
   },
   {
-    "title": "Java-Based Quiz Website",
+    "title": "Quiz Website",
     "url": "https://github.com/yvesmre/3002-Project",
     "slug": "java-quiz",
     "splash": "A quiz website built using base Java. A proof of concept to demonstrate internet protocol communication between servers.",
@@ -24,11 +32,11 @@
     "image": "./images/javaquiz.png"
   },
   {
-    "title": "Trello and MYOB Tools",
-    "url": "https://github.com/yvesmre/Trello-izer",
+    "title": "Minecraft Alpha Chunk Culler",
+    "url": "https://github.com/yvesmre/Alpha-Chunk-Culler",
     "slug": "trello-izer",
-    "splash": "A collection of Trello and MYOB tools for communicating with the API.",
-    "description": "Main collection of work from my time at K-Drive. Collection of various functions that tie to MYOB and Trello APIs linked together by various scripts to help automate various aspects of the company.",
-    "image": "./images/trello.png"
+    "splash": "A simple tool to delete chunks past the 36x36 area of spawn in the original alpha Minecraft file format.",
+    "description": "In the absence of a version of MCEdit that could read Minecraft Alpha files, I designed this application to delete chunks past a 36x36 chunk radius around the center spawn chunks. Useful for people who want to do a \"through the years\" playthrough where they progress through versions of the game. Programmed in Java.",
+    "image": "./images/grass_block_alpha.png"
   }
 ]

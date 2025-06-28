@@ -87,10 +87,13 @@ function App() {
 
 
         <div id='projects' />
+        <p className='px-4 h-auto pl-4 pr-4 py-24 m-[17.5%] bg-stone-500 my-auto text-3xl text-white bg-opacity-75 shadow-2xl rounded-3xl text-center'>
+          Projects:
+        </p>
         <GridLayout >
-          <p className='px-4 h-auto py-16 m-[17.5%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
+          {/* <p className='px-4 h-auto py-16 m-[17.5%] bg-stone-800 my-auto text-3xl text-white bg-opacity-75 shadow-inner rounded-3xl'>
             Projects:
-          </p>
+          </p> */}
           {projects.map(({ node: project }: any) => {
             const title = project.title
             const slug = project.slug
@@ -135,7 +138,7 @@ function App() {
 export default App
 
 function Landing({ }) {
-  return (<div className="md:m-24 mx-12 md:w-auto md:h-[24rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center">
+  return (<div className="md:m-24 mx-12 md:w-auto md:h-[24rem] flex flex-col text-stone-50 bg-orange-400 rounded-3xl bg-opacity-20 justify-center items-center shadow-2xl">
     <div className="scale-75">
       <p className=" text-4xl font-bold">Hi, and welcome to my website.</p>
       {/* <p className=" text-2xl">Site is still under construction, but feel free to click the buttons in the sidebar to find out more about me!</p> */}
