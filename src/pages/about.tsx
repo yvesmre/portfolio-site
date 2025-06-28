@@ -4,7 +4,7 @@ import { IconText } from '../components/icon-text.tsx';
 import * as React from "react"
 import GridLayout from '../components/layout.tsx'
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import ProjectPreview from '../components/project-preview.tsx';
+import ProjectPreview from '../components/project preview.tsx';
 import { StaticImage } from 'gatsby-plugin-image';
 import "../styles/global.css"
 import "../components/sidebar.tsx"

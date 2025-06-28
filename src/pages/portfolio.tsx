@@ -1,7 +1,7 @@
 import * as React from "react"
 import GridLayout from '../components/layout.tsx'
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import ProjectPreview from '../components/project-preview.tsx';
+import ProjectPreview from '../components/project preview.tsx';
 import { StaticImage } from 'gatsby-plugin-image';
 import "../styles/global.css"
 import "../components/sidebar.tsx"
@@ -10,6 +10,7 @@ import SideBar from "../components/sidebar.tsx";
 import SideBarIcon from "../components/sidebar-icon.tsx";
 import { IoHomeOutline, IoPersonOutline, IoReader } from "react-icons/io5";
 import { FaPhotoVideo } from "react-icons/fa";
+import CollectionPreview from "../components/collection preview.tsx";
 
 function App() {
   const data = useStaticQuery(graphql`
@@ -72,7 +73,7 @@ function App() {
             const splash = project.splash
             const imageData = project.thumbnail.childImageSharp.fluid;
 
-            return (<ProjectPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
+            return (<CollectionPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
           })}
         </GridLayout>
       </Main>
