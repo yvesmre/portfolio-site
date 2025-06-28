@@ -1,10 +1,11 @@
 [
   {
-    "date": "May, 1, 2025",
+    "date": "June, 28, 2025",
     "image": "./images/profile.jpg",
+    "header": "Website Updates",
     "text": [
-      "App Tracker",
-      "I'm currently working on an application that would help me organize myself."
+      "This little text box has been slightly updated!",
+      "The photographic section of this website has also seen some changes and now has a handy link for the print shop."
     ]
   }
 ]

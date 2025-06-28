@@ -8,6 +8,7 @@ function Activity() {
     query {
         activityJson {
           date
+          header
           text
           image {
             childImageSharp
@@ -22,6 +23,7 @@ function Activity() {
       }
    `);
 
+  const header = data.activityJson.header
   const text = data.activityJson.text
 
   return <div id="profile">
@@ -31,8 +33,10 @@ function Activity() {
           <Image fluid={data.activityJson.image.childImageSharp.fluid} className="drop-shadow-2xl" />
         </div> */}
         <p className='text-white'>
-        <p className="pb-12 text-4xl font-bold"> What am I currently up to? </p>
-        <p className="pb-8 text-2xl underline"> {data.activityJson.date} </p>
+          <p className="pb-12 text-5xl font-bold"> What am I currently up to? </p>
+          <p className="pb-8 text-2xl underline"> {data.activityJson.date} </p>
+
+          <p className="pb-8 text-3xl font-bold"> {data.activityJson.header} </p>
           {data.activityJson.text.map((text: any) => {
             console.log(text)
             return <p className="pb-4 text-2xl">
