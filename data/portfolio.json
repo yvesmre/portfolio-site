@@ -62,5 +62,13 @@
     "splash": "A weeklong visit to some old favorites in the old country.",
     "description": "A weeklong visit to some old favorites in the old country. Shot on various film stocks on the Leica M5.",
     "thumbnail": "./portfolio/philippines_2025/Mountain Watching.jpg"
+  },
+  {
+    "title": "Brisbane 2025",
+    "url": "",
+    "slug": "portfolio/brisbane_2025",
+    "splash": "5 days in Brisbane",
+    "description": "5 days in Brisbane to mark the end of 2025",
+    "thumbnail": "./portfolio/brisbane_2025/48430018.jpg"
   }
 ]
