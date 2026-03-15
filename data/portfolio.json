@@ -70,5 +70,13 @@
     "splash": "5 days in Brisbane",
     "description": "5 days in Brisbane to mark the end of 2025",
     "thumbnail": "./portfolio/brisbane_2025/48430018.jpg"
+  },
+  {
+    "title": " Singapore and the Philippines",
+    "url": "",
+    "slug": "portfolio/sing_phil_2026",
+    "splash": "2 weeks in two countries",
+    "description": "2 weeks in Singapore and the Philippines",
+    "thumbnail": "./portfolio/sing_phil_2026/IROHAS DSLR COPY 1403 001997-positive.jpg"
   }
 ]
