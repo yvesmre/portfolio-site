@@ -5,7 +5,8 @@
     "slug": "portfolio/selected_works",
     "splash": "Collection of selected work.",
     "description": "A curated collection of photographic work. Shot on celluloid film.",
-    "thumbnail": "./portfolio/selected_works/Work Awaiting.jpg"
+    "thumbnail": "./portfolio/selected_works/Work Awaiting.jpg",
+    "visible": true
   },
   {
     "title": "Memory Hole",
@@ -13,7 +14,8 @@
     "slug": "portfolio/memory_hole",
     "splash": "Shots that are more documentative than artistic.",
     "description": "A dumping ground for shots that aren't anything trying to say anything artistically but rather capture specific moments in my life.",
-    "thumbnail": "./portfolio/memory_hole/Uncharity Sequenced-12.jpg"
+    "thumbnail": "./portfolio/memory_hole/Uncharity Sequenced-12.jpg",
+    "visible": true
   },
   {
     "title": "Low Light Studies",
@@ -21,7 +23,8 @@
     "slug": "portfolio/lowlight",
     "splash": "A collection of shots that err more on the side of experiment as a result of being low light and usually pushed. Usually shot at gigs.",
     "description": "Shots that are composed in low light, often experimental or pushed film to achive the speed required to hand hold.",
-    "thumbnail": "./portfolio/lowlight/claudia_1.jpg"
+    "thumbnail": "./portfolio/lowlight/claudia_1.jpg",
+    "visible": true
   },
   {
     "title": "Perth Studies",
@@ -29,7 +32,8 @@
     "slug": "portfolio/perth",
     "splash": "An assortment of compositions shot all over Perth, without a specific event or trip to thematically link them.",
     "description": "These are compositions with no thematic link between them other than capturing Perth like how I like it, like a painting.",
-    "thumbnail": "./portfolio/perth/queens_garden_1.jpg"
+    "thumbnail": "./portfolio/perth/queens_garden_1.jpg",
+    "visible": true
   },
   {
     "title": "October in Melbourne",
@@ -37,7 +41,8 @@
     "slug": "portfolio/melbourne",
     "splash": "Some favorites from a trip to Melbourne in October.",
     "description": "Some shots from my trip to Melbourne. I was there for 6 days during October to see Thom Yorke of Radiohead perform. \n Shot on Kodak Colorplus 200 at box speed.",
-    "thumbnail": "./portfolio/melbourne/ladder_edited.jpg"
+    "thumbnail": "./portfolio/melbourne/ladder_edited.jpg",
+    "visible": true
   },
   {
     "title": "The Hillaries and Joint Camp",
@@ -45,7 +50,8 @@
     "slug": "portfolio/joint_camp_2024",
     "splash": "Photos during a joint weekend event between three clubs in UWA.",
     "description": "A weekend long event shared between the University Computer Club, University Science Fiction and Fantasy Association, and Unigames in Cameron Hall of the University of Western Australia. \n Shot on Kodak Ultramax 400 pushed by one stop for night shooting and Kodak Vision3 250D.",
-    "thumbnail": "./portfolio/joint_camp_2024/000046_edited_2.JPG"
+    "thumbnail": "./portfolio/joint_camp_2024/000046_edited_2.JPG",
+    "visible": true
   },
   {
     "title": "Sydney New Year's Week",
@@ -53,7 +59,8 @@
     "slug": "portfolio/sydney_2024",
     "splash": "Spending the final 7 days of 2024 in Sydney. Documented on film.",
     "description": "Flew over to Sydney to catch the the fireworks and shoot some film in between. \n Shot on Kodak Colorplus, Fuji Industrial 400, Cinestill 800t, and Kodak Gold.",
-    "thumbnail": "./portfolio/sydney_2024/Bondi-6.jpg"
+    "thumbnail": "./portfolio/sydney_2024/Bondi-6.jpg",
+    "visible": true
   },
   {
     "title": "Philippines 2025",
@@ -61,6 +68,25 @@
     "slug": "portfolio/philippines_2025",
     "splash": "A weeklong visit to some old favorites in the old country.",
     "description": "A weeklong visit to some old favorites in the old country. Shot on various film stocks on the Leica M5.",
-    "thumbnail": "./portfolio/philippines_2025/Mountain Watching.jpg"
+    "thumbnail": "./portfolio/philippines_2025/Mountain Watching.jpg",
+    "visible": true
+  },
+  {
+    "title": "Brisbane 2025",
+    "url": "",
+    "slug": "portfolio/brisbane_2025",
+    "splash": "5 days in Brisbane",
+    "description": "5 days in Brisbane to mark the end of 2025",
+    "thumbnail": "./portfolio/brisbane_2025/48430018.jpg",
+    "visible": true
+  },
+  {
+    "title": " Singapore and the Philippines",
+    "url": "",
+    "slug": "portfolio/sing_phil_2026",
+    "splash": "2 weeks in two countries",
+    "description": "2 weeks in Singapore and the Philippines",
+    "thumbnail": "./portfolio/sing_phil_2026/IROHAS DSLR COPY 1403 001997-positive.jpg",
+    "visible": false
   }
 ]

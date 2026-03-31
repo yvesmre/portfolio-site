@@ -21,6 +21,7 @@ function App() {
           title
           slug
           splash
+          visible
           thumbnail {
             childImageSharp {
               fluid {
@@ -72,8 +73,13 @@ function App() {
             const slug = project.slug
             const splash = project.splash
             const imageData = project.thumbnail.childImageSharp.fluid;
+            const visible = project.visible;
 
-            return (<CollectionPreview title={title} splash={splash} imageData={imageData} slug={slug} />)
+            if (visible) {
+              console.log(visible);
+              return (<CollectionPreview title={title} splash={splash} imageData={imageData} slug={slug} />)}
+            else return <div>
+              </div>
           })}
         </GridLayout>
       </Main>
