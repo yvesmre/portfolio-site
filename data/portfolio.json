@@ -88,5 +88,14 @@
     "description": "2 weeks in Singapore and the Philippines",
     "thumbnail": "./portfolio/sing_phil_2026/IROHAS DSLR COPY 1403 001997-positive.jpg",
     "visible": false
+  },
+  {
+    "title": "Ektachrome E100 March 2026",
+    "url": "",
+    "slug": "portfolio/march_2026_ektachrome",
+    "splash": "",
+    "description": "Experimenting with replicating my Ektachrome color work with my Canon WP-1 on my Nikon F2. It's kinda bad actually, but it exists for archival purposes. Oh and ALVA is in here somewhere. Hello.",
+    "thumbnail": "./portfolio/march_2026_ektachrome/000076660014.jpg",
+    "visible": false
   }
 ]
