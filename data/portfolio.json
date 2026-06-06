@@ -106,5 +106,14 @@
     "description": "Gift to Jon, some photos to remember a night by. I underexposed half of them cause I am just really bad at this. I am sorry. But some of them turned out really nice.",
     "thumbnail": "./portfolio/jon_bday_2026/Disposable (25 of 25).jpg",
     "visible": false
+  },
+  {
+    "title": "Miguel BDAY 2026",
+    "url": "",
+    "slug": "portfolio/miguel_bday_2026",
+    "splash": "",
+    "description": "",
+    "thumbnail": "./portfolio/miguel_bday_2026/002542980023.jpg",
+    "visible": false
   }
 ]
